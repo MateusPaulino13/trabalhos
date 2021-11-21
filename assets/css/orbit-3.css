@@ -297,3 +297,8 @@ p {
     margin-bottom: 0;
   }
 }
+
+.botoes button a {
+  color: #fff;
+  text-decoration: none;
+}
