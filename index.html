@@ -1,37 +1,96 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Calculadora</title>
+    </head>
+    <body>
+        
+        <div class="fundo">
 
-You can use the [editor on GitHub](https://github.com/MateusPaulino13/trabalhos/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+            <h1></h1>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+            <div class="calculadora">
+                <h1>Calculadora</h1>
+                <p id="resultado"></p>
+                <table>
+                    <tr>
+                        <td>
+                            <button class="btn" onclick="clean()">C</button>
+                        </td>
+                        <td>
+                            <button class="btn" onclick="back()"><</button>
+                        </td>
+                        <td>
+                            <button class="btn" onclick="insert('/')">/</button>
+                        </td>
+                        <td>
+                            <button class="btn lateral" onclick="insert('*')">x</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="btn" onclick="insert('7')">7</button>
+                        </td>
+                        <td>
+                            <button class="btn" onclick="insert('8')">8</button>
+                        </td>
+                        <td>
+                            <button class="btn" onclick="insert('9')">9</button>
+                        </td>
+                        <td>
+                            <button class="btn lateral" onclick="insert('-')">-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="btn" onclick="insert('4')">4</button>
+                        </td>
+                        <td>
+                            <button class="btn" onclick="insert('5')">5</button>
+                        </td>
+                        <td>
+                            <button class="btn" onclick="insert('6')">6</button>
+                        </td>
+                        <td>
+                            <button class="btn lateral" onclick="insert('+')">+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="btn" onclick="insert('1')">1</button>
+                        </td>
+                        <td>
+                            <button class="btn" onclick="insert('2')">2</button>
+                        </td>
+                        <td>
+                            <button class="btn" onclick="insert('3')">3</button>
+                        </td>
+                        <td rowspan="2">
+                            <button class="btn lateral" style="height: 106px;" onclick="calcular()">=</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="btn" style="width: 106px;" onclick="insert('0')">0</button>
+                        </td>
+                        <td>
+                            <button class="btn" onclick="insert('.')">.</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
-### Markdown
+            <footer>
+                <h5>Feito por: Mateus Paulino, Vinícius Verdi e Andrey Lopes</h5>
+            </footer>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        </div>        
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MateusPaulino13/trabalhos/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+        <script src="script.js"></script>
+    </body>
+    </html>
