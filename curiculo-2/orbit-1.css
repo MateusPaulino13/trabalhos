@@ -287,3 +287,8 @@ p {
     margin-bottom: 0;
   }
 }
+
+.botoes button a {
+  text-decoration: none;
+  color: white;
+}
